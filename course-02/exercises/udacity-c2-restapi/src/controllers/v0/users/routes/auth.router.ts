@@ -10,7 +10,6 @@ const plainTextPassword: string = 'SirCatFace';
 import { NextFunction } from 'connect';
 
 import * as EmailValidator from 'email-validator';
-//import { config } from 'bluebird';
 import { config } from '../../../../config/config'
 
 const router: Router = Router();
