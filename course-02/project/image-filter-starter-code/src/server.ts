@@ -14,6 +14,22 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   app.use(bodyParser.json());
 
   // @TODO1 IMPLEMENT A RESTFUL ENDPOINT
+  app.get("/filteredimage", async ( req, res ) => {
+  //  1. validate the image_url query
+    let exImage;
+    try {
+      // Is there an existent image? True || False?
+      exImage = await imageExists(req.query.image_url);
+
+      if (exImage) {
+        
+      }
+    }
+
+
+  });
+
+
   // GET /filteredimage?image_url={{URL}}
   // endpoint to filter an image from a public url.
   // IT SHOULD
@@ -34,8 +50,8 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   // Root Endpoint
   // Displays a simple message to the user
   app.get( "/", async ( req, res ) => {
-    res.send("try GET /filteredimage?image_url={{}}")
-  } );
+    res.send("Hey my friend, if you want to filter a public image simply try to add /filteredimage?image_url={{}} to the URL :)")
+  });
   
 
   // Start the Server
