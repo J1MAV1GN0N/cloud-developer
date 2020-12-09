@@ -14,7 +14,6 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   app.use(bodyParser.json());
 
 /*
-
   // @TODO1 IMPLEMENT A RESTFUL ENDPOINT
   app.get("/filteredimage", async ( req, res ) => {
   //  1. validate the image_url query
