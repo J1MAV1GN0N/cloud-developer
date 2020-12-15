@@ -20,7 +20,7 @@ import { V0MODELS } from './controllers/v0/model.index';
 
   //CORS Should be restricted
   app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "http://udacity-image-filter-christ-dev.eu-central-1.elasticbeanstalk.com"); //"http://udagram-christ-dev-dev.eu-central-1.elasticbeanstalk.com/api/v0"); //"http://localhost:8100"
+    res.header("Access-Control-Allow-Origin", "http://udagram-christ-dev-dev.eu-central-1.elasticbeanstalk.com/api/v0");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
     next();
   });
